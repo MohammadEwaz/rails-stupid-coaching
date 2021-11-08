@@ -2,8 +2,14 @@
 <p><% @question %></p>
 <p><% @answer %></p>
 
-<div class="ask">
+<div class="thequestion">
+  <p> <%= @question %></p>
+  <p>-You</p>
+</div>
+
+<div class="theanswer">
   <p> <%= @answer %></p>
+  <p>-Your Coach</p>
 </div>
 
 <p><%= link_to "ask a new question", ask_path %></p>
